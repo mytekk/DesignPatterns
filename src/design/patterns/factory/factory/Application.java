@@ -25,9 +25,17 @@ public class Application {
 
         bmw.drive();
 */
+/*
         // tworzenie z pomoca fabryki
         AudiCarFactory audiCarFactory = new AudiCarFactory();
         Car car = audiCarFactory.buildCar("A3");
+*/
+
+        //trzecie podejscie - fabryka abstrakcyjna
+        AbstractCarFactory abstractCarFactory = new AbstractCarFactory();
+        Car car = abstractCarFactory.buildAudiCar("A3");
+        Car car2 = abstractCarFactory.buildBMWCar("E3");
+        Car car3 = abstractCarFactory.buildMercedesCar("W123");
 
     }
 }
