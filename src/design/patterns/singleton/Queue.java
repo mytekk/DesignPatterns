@@ -11,7 +11,8 @@ public class Queue {
     //jedyny obiekt naszej klasy, jedyna instancja
     private static Queue instance = null;
 
-    //dziwna metoda zwraca obiekt tego typu
+    //metoda, ktora dostarcza obiekt naszej klasy
+    //UWAGA - dostarcza tylko jeden obiekt w obrebie danego progamu!!!
     public static Queue getInstance() {
         if (instance == null) {
             instance = new Queue();
@@ -19,16 +20,18 @@ public class Queue {
         return instance;
     }
 
-    //pole
+    //pole values - jest nim lista stringów
     private List<String> values;
 
     //prywatny konstruktor
     private Queue() {
+
         values = new ArrayList<>();
     }
 
-    //dodaje element na koncu
+    //dodaje element na koncu, korzystamy z list-owej funkcji add
     public void push(String value) {
+
         values.add(value);
     }
 
@@ -37,7 +40,7 @@ public class Queue {
     public String pop() {
         String valueToReturn = null;
         if (values.size() > 0) {
-            valueToReturn = values.remove(0); //remove usuwa i zwraca usuwany element
+            valueToReturn = values.remove(0); //remove usuwa z listy i zwraca usuwany element
         }
         return valueToReturn;
     }

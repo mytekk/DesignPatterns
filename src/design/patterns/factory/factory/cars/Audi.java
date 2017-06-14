@@ -1,9 +1,12 @@
-package design.patterns.factory.factory;
+package design.patterns.factory.factory.cars;
 
-import java.util.List;
+import design.patterns.factory.factory.car.components.Engine;
+import design.patterns.factory.factory.car.components.Wheels;
 
 /**
  * Created by RENT on 2017-06-02.
+ *
+ * klasa opisująca samochód Audi
  */
 public class Audi implements Car {
 

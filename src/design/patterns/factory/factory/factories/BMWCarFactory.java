@@ -1,7 +1,17 @@
-package design.patterns.factory.factory;
+package design.patterns.factory.factory.factories;
+
+import design.patterns.factory.factory.car.components.Engine;
+import design.patterns.factory.factory.car.components.Wheels;
+import design.patterns.factory.factory.cars.BMW;
+import design.patterns.factory.factory.cars.Car;
 
 /**
  * Created by RENT on 2017-06-02.
+ *
+ * fabryka obiektów typu BMW
+ * metoda buildCar przyjmuje nazwę konkretnego modelu
+ * i na tej podstawie, jeśli w swoich recepturach na samochody znajdzie
+ * odpowiedni model, to tworzy odpowiedni obiekt klasy BMW
  */
 public class BMWCarFactory implements CarFactory {
 

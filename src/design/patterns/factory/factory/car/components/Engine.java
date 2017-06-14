@@ -1,7 +1,9 @@
-package design.patterns.factory.factory;
+package design.patterns.factory.factory.car.components;
 
 /**
  * Created by RENT on 2017-06-02.
+ *
+ * klasa opisująca typ silnika w samochodzie
  */
 public class Engine {
 

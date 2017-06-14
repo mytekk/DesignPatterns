@@ -2,6 +2,8 @@ package design.patterns.chain;
 
 /**
  * Created by RENT on 2017-06-02.
+ *
+ * obiekt łańcucha odpowiedzialności - policja
  */
 public class PoliceChainElement implements ChainElement {
 
